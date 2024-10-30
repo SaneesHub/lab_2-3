@@ -16,12 +16,13 @@ div #search{
     margin: 20px;
 }
 select {
-    display: inline-block;
-    float: right;
-    padding: 10px;
+    width: 135px;
+    height: 30px;
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-left: 1100px;
 }
 body{
     padding: 10px;
@@ -37,7 +38,7 @@ body{
 }
 .grid_cards{
     display: grid;
-    grid:180px /auto auto auto ;
+    grid:135px /auto auto auto ;
     grid-gap: 20px;
 }
 .grid_cards>div{
@@ -74,4 +75,17 @@ span{
 }
 .alltp{
     background-color:rgb(242,244,247);
+}
+.headik{
+    display: flex;
+}
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
 }
